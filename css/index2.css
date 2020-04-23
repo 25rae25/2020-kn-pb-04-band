@@ -1,0 +1,10 @@
+body html { margin: 0; padding: 0;}
+.clearfix {clear: both;}
+
+.header {background-color: black; color: white;}
+.nav-wrap { float: left;}
+.nav-wrap > div {float: left; padding: 14px 18px;}
+.nav-wrap > div:hover { background-color: grey; color: black; cursor: pointer;}
+.sch-wrap {float: right;}
+.sch-wrap:hover {cursor: pointer; background-color: #f20;}
+.sch-wrap > span {padding: 16px 18px;}
