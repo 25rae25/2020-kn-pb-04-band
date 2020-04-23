@@ -1,7 +1,34 @@
 # 가운데 정렬, Float
 ## 가운데 정렬
-### text-align을 포함한 모든 **글자와 관련**된 속성은 상속이 된다.
+### 인라인요소 정렬
+- text-align을 포함한 모든 **글자와 관련**된 속성은 상속이 된다.
 1. text-align
 2. font-size
 3. color
-4. line-height
+4. line-height ...
+
+### 블럭요소 정렬
+- div, p, h 등 layout(block, box)요소들은 자기가 가운데로 가야한다.
+
+```css
+.box {margin: 0 auto;}
+```
+
+## Float(중요!!!!)
+- float는 태그를 inline속성으로 바꿔준다.
+- inline요소와 float요소가 만나면 어울려진다.
+- 사이트 레이아웃을 잡을때 많이 사용된다.
+
+```html
+<div class="header>
+	<div class="lt">Left</div>
+	<div class="rt">Right</div>
+	<div class="clearfix"></div>
+	</div>
+```
+
+```css 
+.lt {Float: left;} /* 띄워서 왼쪽에 가져다 놓는다 */
+.rt {Float: right;} /* 띄워서 오른쪽에 가져다 놓는다 */
+.clearfix {clear: both;}   /* 내 부모 안에서 내 위에 있는 모든 float요소를 가라앉힌다. */
+``` 
