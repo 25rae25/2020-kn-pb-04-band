@@ -32,3 +32,18 @@
 .rt {Float: right;} /* 띄워서 오른쪽에 가져다 놓는다 */
 .clearfix {clear: both;}   /* 내 부모 안에서 내 위에 있는 모든 float요소를 가라앉힌다. */
 ``` 
+
+## 이미지를 반응형으로 만들기
+- 이미지에 width, height를 주지 않고 사용하면 이미지 본래의 크기로 표현된다.
+- 반응형으로 이미지를 사용하기 위해서는 이미지 감싸고 있는 부모의 사이즈에 맞춰서 **%**로 표현한다.
+```css
+.img {width: 100%}
+.img {width: 100%; max-width: 1000px;}
+```
+
+## box-sizing
+- block 요소의 사이즈를 측정할 떄 css는 기본값(box-sizing: content-box)이 내용의 크기로 지정되므로, 작업하는데 불편하다. 그래서 아래와 같이 block요소들의 사이즈 값의 측정방법을 바꾼다.
+
+```css
+h1, h2, h3, h4, h5, h6, div, p {box-sizing: border-box;}
+```
