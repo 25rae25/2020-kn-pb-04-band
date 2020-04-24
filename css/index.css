@@ -1,10 +1,9 @@
-/* Nomalize */
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
+/*********글꼴불러오기 *********/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
 
+/********** Nomalize **********/
+html,
+body 
 h1,
 h2,
 h3,
@@ -13,20 +12,27 @@ h5,
 h6,
 div,
 p {
+	 margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
+img{vertical-align: bottom;}
 
 body {
 	height: 10000px;
 }
 
 
-/* 공통사항 */
+/********** 공통사항 **********/
 .clearfix {
 	clear: both;
 }
-
-/* .header */
+.title {text-align: center;  font-family: 'Nunito', sans-serif; font-weight: 400; letter-spacing: 8px;}
+.slogan {color: #999; text-align: center; font-style: italic; padding: 24px 0;}
+.desc {color: #222; text-align: justify;}
+.img {width: 100%;}
+.wrapper {width: 790px; margin: 0 auto; padding: 100px 12px; width: 100%; max-width: 790px;}
+/********** .header **********/
 .header {
 	background-color: black;
 	color: white;
@@ -60,7 +66,7 @@ body {
 	padding: 16px 18px;
 }
 
-/* .main-wrap */
+/********** .main-wrap **********/
 .main-wrap {
 	text-align: center;
 }
@@ -71,10 +77,34 @@ body {
 	width: 100%;
 }
 
-.band-wrap {
-	border: 10px solid red;
-	width: 100%;
-	max-width: 790px;
-	margin: 0 auto;
-	padding: 100px 12px;
-}
+/********** .band-wrap **********/
+.member {width: 33.3333%; float: left; padding: 40px;}
+.member > .name {text-align: center; padding: 16px;}
+/* .member > .photo > img {} */
+.member img {border-radius: 6px;}
+
+/********** .tour-wrap **********/
+.tour-wrap {background-color:black;}
+.tour-wrap .title {color: #fff;}
+.tour-wrap .lists {background-color: #f8f8f8; border: 1px solid #999;}
+/*
+.tour-wrap .list {padding: 12px; border-bottom: 1px solid #999;}
+.tour-wrap .list:last-child {border-bottom: none;}
+*/
+.tour-wrap .list {padding: 12px;}
+.tour-wrap .list:not(:last-child) {border-bottom: 1px solid #999;}
+.badge-soldout {background-color: #f20; color: #fff; padding: 2px 8px; font-style: 144x; margin-left: 30px;}
+.badge-counter {float: right; background-color: #111; color: #fff; padding: 2px 6px; border-radius: 50%;
+} 
+.cities {margin-top: 30px;}
+.city {float: left; width: 32%;}
+.city:nth-child(2) {margin: 0 2%;}
+.city > .conts {background-color: #fff; padding: 16px;}
+.city > .photo > img:hover {opacity: 0.7;}
+.city > .conts > h3 {padding: 6px 0;}
+.city > .conts > p {padding: 6px 0;}
+.city > .conts > .summary {padding: 6px 0; color: #999;}
+.city > .conts > .bt-buy {padding: 12px; background-color: #111; color: #fff;
+display: inline-block; margin-top: 12px;}
+.city > .conts > .bt-buy:hover {background-color: #ccc; color: #111; 
+	cursor: pointer;}
