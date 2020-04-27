@@ -27,6 +27,7 @@ body {
 .clearfix {
 	clear: both;
 }
+.clear::after {content: ""; display: block; clear: both;}
 .title {text-align: center;  font-family: 'Nunito', sans-serif; font-weight: 400; letter-spacing: 8px;}
 .slogan {color: #999; text-align: center; font-style: italic; padding: 24px 0;}
 .desc {color: #222; text-align: justify;}
@@ -106,5 +107,4 @@ body {
 .city > .conts > .summary {padding: 6px 0; color: #999;}
 .city > .conts > .bt-buy {padding: 12px; background-color: #111; color: #fff;
 display: inline-block; margin-top: 12px;}
-.city > .conts > .bt-buy:hover {background-color: #ccc; color: #111; 
-	cursor: pointer;}
+.city > .conts > .bt-buy:hover {background-color: #ccc; color: #111; cursor: pointer;}
