@@ -89,6 +89,8 @@
 }
 
 @media screen and (max-width: 767px) {
+	body {padding-top: 48px;}
+	.header {top: 0;}
 	.sch-wrap .fa-search {display: none;}
 	.sch-wrap .fa-bars {display: block;}
 	.nav-wrap > div:not(:first-child) {display: none;}
