@@ -7,14 +7,15 @@
 	font-family: 'Nunito', sans-serif; font-weight: 400; letter-spacing: 8px;}
 .slogan {color: #999; text-align: center; font-style: italic; padding: 24px 0;}
 .desc {color: #222; text-align: justify;}
-.wrapper {width: 100%; max-width: 790px; margin: 0 auto; padding: 100px 12px;}
+.wrapper {width: 100%; max-width: 1200px; margin: 0 auto; padding: 100px 12px;}
+/* .wrapper-sm {width: 100; max-width: 1200px; margin: 0 auto; padding: 100px 12px; border: 1px solid red;} */
 
 /********** .header **********/
 .header {background-color: black; color: white; width: 100%; position: fixed; z-index: 99;}
-.nav-wrap {float: left;}
+.nav-wrap {float: left; padding: 0 24px;}
 .nav-wrap > div {float: left; padding: 14px 18px;}
 .nav-wrap > div:hover {cursor: pointer; background-color: #ccc; color: #111;}
-.sch-wrap {float: right;}
+.sch-wrap {float: right; padding: 0 18px;}
 .sch-wrap .fa-bars {display: none;}
 .sch-wrap:hover {cursor: pointer; background-color: #f20;}
 .sch-wrap > div {padding: 16px 18px;}
@@ -29,7 +30,7 @@
 .main-slogan > h3 {font-size: 18px;}
 
 /********** .band-wrap **********/
-.member {width: 33.3333%; float: left; padding: 40px;}
+.member {width: 25%; float: left; padding: 40px;}
 .member > .name {text-align: center; padding: 16px;}
 /* .member > .photo > img {} */
 .member img {border-radius: 6px;}
@@ -84,22 +85,22 @@
 .footer a {color: #999;}
 
 @media screen and (max-width: 991px) {
-	
+
 }
+
 @media screen and (max-width: 767px) {
 	.sch-wrap .fa-search {display: none;}
 	.sch-wrap .fa-bars {display: block;}
 	.nav-wrap > div:not(:first-child) {display: none;}
 	.main-slogan {display: none;}
 	.member {width: 60%; margin: 0 20%;}
-	.city {width: 100%; margin-bottom: 30px ;}
-	.city:nth-child(2) {margin: 0; margin-bottom: 30px ;}
-	.infos {width: 1000%;}	
+	.city {width: 100%; margin-bottom: 30px;}
+	.city:nth-child(2) {margin: 0; margin-bottom: 30px;}
+	.infos {width: 100%;}	
 	.forms {width: 100%;}
-	.forms > div:nth-child(1) > input {width:100%;}
+	.forms > div:nth-child(1) > input {width: 100%;}
 }
 
-@media screen and (max-width: 575px) {}
+@media screen and (max-width: 575px) {
 	.member {width: 80%; margin: 0 10%;}
 }
-
